@@ -1,0 +1,24 @@
+.tableFixHead {
+    overflow: auto;
+    height: 300px; /* Adjust height as needed */
+  }
+  .table-header th {
+    position: sticky;
+    top: 0;
+    background: #343a40; /* Match background color with navbar */
+    color: white;
+  }
+  .marquee-container {
+    overflow: hidden;
+  }
+  .marquee {
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+    animation: marquee 10s linear infinite;
+  }
+  @keyframes marquee {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+  }
+ 

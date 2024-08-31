@@ -1,0 +1,34 @@
+ Custom table styling
+.table {
+    text-transform: uppercase;
+    color:rgb(205, 77, 77);
+    border-collapse: separate; 
+}
+
+.table th {
+    text-transform: uppercase;
+
+    text-decoration: solid;
+    position: sticky; /* Keeps header fixed at top */
+    background-color:lightblue; /* Bootstrap primary color for table headers */
+    color: rgb(24, 22, 22); /* White text color for headers */
+}
+
+.table td {
+    text-transform: uppercase;
+    text-align: center;
+    vertical-align: middle; /* Align text vertically */
+}
+
+.card {
+    border-radius: 8px; /* Rounded corners */
+    border: 1px solid red; /* Light border */
+    background-color: #ffffff; /* White background color */
+}
+
+.card-title {
+    font-size: 1.5rem; /* Larger font size */
+    font-weight: bold; /* Bold text */
+    color: blue; /* Bootstrap primary color */
+} 
+

@@ -1,0 +1,82 @@
+.tableFixHead {
+    overflow: auto;
+    max-height: 400px;
+  }
+
+  .table-header th {
+    position: sticky;
+    top: 0;
+    background-color: #343a40;
+    color: white;
+  }
+
+  /* Responsive marquee styling */
+  marquee {
+    font-size: 1.25rem;
+    color: #565656;
+  }
+
+  /* Custom styles for smaller screens */
+  @media (max-width: 768px) {
+    .navbar-toggler {
+      margin-left: auto;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .navbar-brand {
+      font-size: 1.2rem;
+    }
+
+    .tableFixHead {
+      max-height: 300px;
+    }
+
+    marquee {
+      font-size: 1rem;
+    }
+  }
+  
+  footer {
+    background-color: #343a40;
+    color: white;
+    padding: 40px 0;
+    border-top: 2px solid #e2e2e2;
+  }
+  
+  footer a {
+    color: #ffc107;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-content p {
+    margin: 10px 0;
+    font-size: 16px;
+  }
+  
+  footer .footer-content {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  footer .footer-content i {
+    font-size: 20px;
+    margin: 0 10px;
+  }
+  
+  @media (max-width: 768px) {
+    footer {
+      padding: 20px 10px;
+    }
+  
+    .footer-content p {
+      font-size: 14px;
+    }
+  }
+  
+  

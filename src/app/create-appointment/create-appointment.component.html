@@ -1,0 +1,41 @@
+<nav class="navbar navbar-expand-lg bg-dark" style="margin:auto">
+  <a class="navbar-brand" style="color: white;" href="#">SIDDHINATH HOSPITALS</a>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <li class="nav-item">
+        <a class="nav-link active" style="color: white;" aria-current="page" [routerLink]="'/admin'">Back</a>
+      </li>
+    </ul>
+    <div class="mx-2">
+      <button class="btn btn-danger" >
+        <a class="text-white" [routerLink]="'/home'" style="text-decoration: none;">Logout</a>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+  <h2 class="text-center">Add New Appointment</h2>
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" class="form-control" name="name" id="name" placeholder="Enter Name" [(ngModel)]="appointment.name" />
+    </div>
+    <div class="form-group">
+      <label for="age">Age</label>
+      <input type="text" class="form-control" name="age" id="age" placeholder="Enter Age" [(ngModel)]="appointment.age" />
+    </div>
+    <div class="form-group">
+      <label for="symptoms">Symptoms</label>
+      <input type="text" class="form-control" name="symptoms" id="symptoms" placeholder="Enter Your Symptoms" [(ngModel)]="appointment.symptoms" />
+    </div>
+    <div class="form-group">
+      <label for="number">Number</label>
+      <input type="text" class="form-control" name="number" id="number" placeholder="Enter Your Number" [(ngModel)]="appointment.number" />
+    </div>
+    <button type="submit" class="btn btn-success">Submit</button>
+  </form>
+</div>
